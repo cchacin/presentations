@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>From Tomcat to TomEE</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css"
 href="../styles.css">
@@ -20,62 +20,100 @@ class: center, middle, inverse
 # TomEE
 [tommy]
 ---
+# Agenda
+## Why Tomcat
+## Why JavaEE
+## Why TomEE
+## Demo
+---
+# Why Tomcat
+---
 layout: false
-.left-column[
-  # Agenda
-  ## Why Tomcat
-  ## Why JavaEE
-  ## Why TomEE
-]
-.right-column[
-]
-
+In market, various application servers are present. To make a choice b/w them is a tough task. B/w them, Tomcat is one of the best choice. Tomcat offers these features which make it different from other competing solutions.
+![Tomcat](./tomcat-logo.gif)
+## Light and Fast
+## Scalable and Flexible
+## Secure
 ---
-.left-column[
-  # Why Tomcat
-  ## Market share
-  ## We add libs :(
-]
-.right-column[
-  In market, various application servers are present. To make a choice b/w them is a tough task. B/w them, Tomcat is one of the best choice. Tomcat offers these features which make it different from other competing solutions.
-  ![Tomcat](./tomcat-logo.gif)
-  - Light and Fast
-  - Scalable and Flexible
-  - Secure
-]
+class: center
+![Market share](./marketshare.jpg)
 ---
-.left-column[
-  # Why Tomcat
-  ## Market share
-  ## We add libs :(
-]
-.right-column[
-  ![Market share](./marketshare.jpg)
-]
+class: center
+![Libs](./tomcat-file-structure.png)
 ---
-.left-column[
-  # Why Tomcat
-  ## Market share
-  ## We add libs :(
-]
-.right-column[
-  ![Libs](./tomcat-file-structure.png)
-]
+class: center
+![Hibernate](./libs.png)
 ---
-![Hibernate](./hibernate.png)
+class: center
+## Our prefered libs with Maven
+![pom](./dependencies.jpg)
+![Not Bad](./notbad.png)
 ---
-![Jersey](./jersey.png)
+class: center
+## Transitivity
+![transitive](./transitive.png)
 ---
-![Spring](./spring.png)
+class: center
+## Jars Hell
+![Jars](./jars.jpg)
 ---
-# 20~60MB War files :O
-[Please don't do that]
+class: center
+# 20~60MB War files :(
+---
+class: center
+## Multiple Wars - 1 Tomcat
+![Multiple](./multiple.jpeg)
+---
+class: center
+## Lib/Jar Duplication N times
+![Table](./table.jpg)
 ---
 name: inverse
 layout: true
 class: center, middle, inverse
 ---
 # Why JavaEE
+---
+layout: false
+![JavaEE](./javaee-logo.png)
+### Developer productivity
+### Feature rich platform
+### Web Profile
+### Freedom of choice
+---
+class: center
+##Java EE 6 Web Profile Compatible Implementations
+![Servers](./javaee6-servers.png)
+---
+class: center
+![JavaEE Stack](./javaee-stack.jpg)
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+# Why TomEE
+---
+layout: false
+##TomEE
+The Web Profile version of TomEE contains
+- CDI - Apache OpenWebBeans
+- EJB - Apache OpenEJB
+- JPA - Apache OpenJPA
+- JSF - Apache MyFaces
+- JSP - Apache Tomcat
+- JSTL - Apache Tomcat
+- JTA - Apache Geronimo Transaction
+- Servlet - Apache Tomcat
+- Javamail - Apache Geronimo JavaMail
+- Bean Validation - Apache BVal
+
+##TomEE+
+The TomEE Plus distribution adds the following:
+- JAX-RS - Apache CXF
+- JAX-WS - Apache CXF
+- JMS - Apache ActiveMQ
+- Connector - Apache Geronimo Connector
     </textarea>
     <script src="../remark-latest.min.js"
 type="text/javascript">
